@@ -7,8 +7,9 @@
   <body>
   <header>
     <nav>
-      <a>
-        <img src="img/index-logo.svg" width="" height="" alt="Логотип">
+      <!-- Нужно ли оборачивать логотип главной страницы в ссылку, как я сделала ниже, или можно просто добавить лого в навигацию?--> 
+        <a>
+        <img src="img/index-logo.svg" width="138" height="70" alt="">
       </a>
       <ul>
         <li><a href="blank.html">Информация</a></li>
@@ -52,6 +53,26 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </span>
+    <div>
+      <form action="" method="GET">
+        <h2>Поиск гостиницы в Седоне</h2>
+          <label for="date-in">Дата заезда:
+            <input type="date" name="check-in" id="date-in" value="24 апреля 2017">
+          </label>
+          <br>
+          <label for="date-out">Дата выезда:
+            <input type="date" name="check-out" id="date-out" value="4 июля 2017">
+          </label>
+          <br> 
+          <label for="adults">Взрослые:
+            <input type="number" name="amount" value="2" id="adults" min="1" max="10" step="1">
+          </label> 
+          <label for="kids">Дети:
+            <input type="number" name="amount" value="0" id="kids" min="0" max="10" step="1">
+          </label> 
+          <input type="submit" value="Найти"> 
+      </form>
+    </div>
   </main>
   <footer>
     <p>#visitSedona</p><br>
@@ -71,17 +92,12 @@
       </ul>
     </section>
     <p> 
-      Разработано: 
+      Website by  
       <span>HTML Academy</span>
-      <a img src="" width="" height="" alt="Логотип Академии"
+      <a img src="" width="115" height="41" alt="link-to-htmlacademy.ru"
          href="https://htmlacademy.ru/intensive/htmlcss">
       </a>
     </p>
   </footer>
-  <section>
-    <h2>Поиск гостиницы в Седоне</h2>
-    <!-- Здесь будет форма для ввода данных -->
-    <button type="button">Найти</button>
-  </section>
   </body>
 </html>
