@@ -7,14 +7,14 @@
     --dark-gray: #666666; 
     --hover-gray: #EBEBEB;
     --light-gray:#F2F2F2;
-    --focus-gray:#BDBBBC;
+    --active-gray:#BDBBBC;
     --basic-blue:#23A9E1;
-    --focus-blue:#5496BD; 
+    --active-blue:#5496BD; 
     --hover-blue:#669EC0; 
     --blue-gray:#81B3D2; 
     --light-blue-gray:#81B3D3; 
     --dark-brown:#491213; 
-    --focus-brown: #503E33; 
+    --active-brown: #503E33; 
     --neutral-brown:#766458; 
     --light-brown:#766357; 
     --hover-brown: #604E43; 
@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     min-width: 1240px;
-    font-family:"PT Sans"; sans-serif;
+    font-family:"PT Sans", Arial, sans-serif;
     font-style: normal;
     text-transform: uppercase; 
     text-align: center;
@@ -54,8 +54,8 @@ a {
 .hotel-name h2:hover  {
     color:var(--blue-gray);
 }
-.site-navigation a:focus,
-.hotel-name h2:focus {
+.site-navigation a:active,
+.hotel-name h2:active {
     color:var(--basic-black);
     mix-blend-mode: normal;
     opacity: 0.3;
@@ -70,9 +70,9 @@ a {
     background-color:var(--hover-brown);
     color: var(--basic-white);
 }
-.search-hotels a:focus,
-.booking a:focus  {
-    background-color:var(--focus-brown);
+.search-hotels a:active,
+.booking a:active  {
+    background-color:var(--active-brown);
     color: var(--basic-white);
     mix-blend-mode: normal;
     opacity: 0.3;
@@ -85,7 +85,7 @@ a {
     background-color: var(--hover-gray);
     color: var(--basic-black);
 }
-.trip-details input:focus {
+.trip-details input:active {
     background-color: var(--basic-white);
     color: var(--basic-black);
     border: 2px solid #E5E5E5;
@@ -96,7 +96,7 @@ a {
 .form-icons svg:hover {
     color: var(--basic-black);
 }
-.form-icons svg:focus {
+.form-icons svg:active {
     color:var(--blue-gray);
 }
 .find input,
@@ -111,10 +111,10 @@ a {
     background-color: var(--hover-blue);
     color: var(--basic-white);
 }
-.find input:focus
-.more-details a:focus,
-.sosial-icons a:focus {
-    background-color: var(--focus-blue);
+.find input:active
+.more-details a:active,
+.sosial-icons a:active {
+    background-color: var(--active-blue);
     color: var(--basic-white);
     mix-blend-mode: normal;
     opacity: 0.3;
@@ -127,10 +127,22 @@ a {
     background-color: var(--basic-white);
     color: var(--blue-gray);
 }
-.htmlacademy-logo a:focus {
+.htmlacademy-logo a:active {
     background-color: var(--basic-white);
-    color: var(--focus-gray);
+    color: var(--active-gray);
 }
+.site-navigation a:focus,
+.search-hotels a:focus,
+.trip-details input:focus,
+.form-icons svg:focus,
+.find input:focus,
+.social-icons a:focus, 
+.htmlacademy-logo a:focus {
+    outline-color: var(--basic-blue);
+    outline-style: normal;
+    outline-width: 1px;
+}
+
 .main-header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
