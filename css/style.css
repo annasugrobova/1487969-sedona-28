@@ -43,7 +43,7 @@ a {
     text-decoration: none;
   }
 
-.site-navigation ul {
+ul {
     list-style: none;
 }
 .site-navigation a,
