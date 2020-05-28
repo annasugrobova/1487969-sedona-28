@@ -22,11 +22,11 @@
     --peachy:#F49774;
     --neutral-pink:#F4B1A4; 
 }
-body {
+.page-body {
     margin: 0;
     padding: 0;
     min-width: 1240px;
-    font-family:"PT Sans", Arial, sans-serif;
+    font-family:'PT Sans', Tahoma, sans-serif;
     font-style: normal;
     text-transform: uppercase; 
     text-align: center;
@@ -43,7 +43,7 @@ a {
     text-decoration: none;
   }
 
-.site-navigation {
+.site-navigation ul {
     list-style: none;
 }
 .site-navigation a,
@@ -137,7 +137,11 @@ a {
 .form-icons svg:focus,
 .find input:focus,
 .social-icons a:focus, 
-.htmlacademy-logo a:focus {
+.htmlacademy-logo a:focus
+.main-header-logo a:focus,
+.hotel-name h2:focus,
+.more-details a:focus,
+.booking a:focus {
     outline-color: var(--basic-blue);
     outline-style: normal;
     outline-width: 1px;
