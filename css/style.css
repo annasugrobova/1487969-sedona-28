@@ -32,8 +32,6 @@
     text-align: center;
     background-color: var(--basic-white); 
     background-image: url(img\background-photo.jpg)    
-    /*background-position: 
-    background-repeat:*/ 
 }
 img {
     max-width: 100%;
@@ -45,133 +43,134 @@ a {
 
 ul {
     list-style: none;
+    color: var(--basic-black);
 }
-.site-navigation a,
-.hotel-name h2 {
+.site-navigation,
+.hotel-name {
     color:var(--basic-black);
 }
-.site-navigation a:hover,
-.hotel-name h2:hover  {
+.site-navigation:hover,
+.hotel-name:hover  {
     color:var(--blue-gray);
 }
-.site-navigation a:active,
-.hotel-name h2:active {
+.site-navigation:active,
+.hotel-name:active {
     color:var(--basic-black);
     mix-blend-mode: normal;
     opacity: 0.3;
 } 
-.search-hotels a,
-.booking a  {
+.search-hotels,
+.booking {
     background-color:var(--light-brown);
     color: var(--basic-white);
 }
-.search-hotels a:hover,
-.booking a:hover  {
+.search-hotels:hover,
+.booking:hover  {
     background-color:var(--hover-brown);
     color: var(--basic-white);
 }
-.search-hotels a:active,
-.booking a:active  {
+.search-hotels:active,
+.booking:active  {
     background-color:var(--active-brown);
     color: var(--basic-white);
     mix-blend-mode: normal;
     opacity: 0.3;
 }
-.trip-details input {
+.trip-details {
     background-color: var(--light-gray);
     color: var(--basic-black);
 }
-.trip-details input:hover {
+.trip-details:hover {
     background-color: var(--hover-gray);
     color: var(--basic-black);
 }
-.trip-details input:active {
+.trip-details:active {
     background-color: var(--basic-white);
     color: var(--basic-black);
     border: 2px solid #E5E5E5;
 }
-.form-icons svg {
+.form-icons {
     color: var(--basic-gray);
 }
-.form-icons svg:hover {
+.form-icons:hover {
     color: var(--basic-black);
 }
-.form-icons svg:active {
+.form-icons:active {
     color:var(--blue-gray);
 }
-.find input,
-.more-details a,
-.sosial-icons a  {
+.find,
+.more-details,
+.sosial-icons  {
     background-color: var(--blue-gray);
     color: var(--basic-white);
 }
-.find input:hover,
-.more-details a:hover,
-.sosial-icons a:hover {
+.find:hover,
+.more-details:hover,
+.sosial-icons:hover {
     background-color: var(--hover-blue);
     color: var(--basic-white);
 }
-.find input:active
-.more-details a:active,
-.sosial-icons a:active {
+.find:active
+.more-details:active,
+.sosial-icons:active {
     background-color: var(--active-blue);
     color: var(--basic-white);
     mix-blend-mode: normal;
     opacity: 0.3;
 }
-.htmlacademy-logo a {
+.htmlacademy-logo {
     background-color: var(--basic-white);
     color: var(--very-extra-dark);
 }
-.htmlacademy-logo a:hover {
+.htmlacademy-logo:hover {
     background-color: var(--basic-white);
     color: var(--blue-gray);
 }
-.htmlacademy-logo a:active {
+.htmlacademy-logo:active {
     background-color: var(--basic-white);
     color: var(--active-gray);
 }
-.site-navigation a:focus,
-.search-hotels a:focus,
-.trip-details input:focus,
-.form-icons svg:focus,
-.find input:focus,
-.social-icons a:focus, 
-.htmlacademy-logo a:focus
-.main-header-logo a:focus,
-.hotel-name h2:focus,
-.more-details a:focus,
-.booking a:focus {
+.site-navigation:focus,
+.search-hotels:focus,
+.trip-details:focus,
+.form-icons:focus,
+.find:focus,
+.social-icons:focus, 
+.htmlacademy-logo:focus
+.main-header-logo:focus,
+.hotel-name:focus,
+.more-details:focus,
+.booking:focus {
     outline-color: var(--basic-blue);
-    outline-style: normal;
+    outline-style: solid;
     outline-width: 1px;
 }
 
 .main-header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.main-slogan p {
+.main-slogan {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
-.list-heading h2 {
+.list-heading {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
     color: var(--extra-dark);
     background-color: var(--basic-white);
 }
-.form-question h2 {
+.form-question {
     font-weight: bold;
     font-size: 30px;
     line-height: 24px;
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
-.form-caption p {
+.form-caption {
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
@@ -183,12 +182,12 @@ ul {
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--basic-black);
 }
-.copyright p {
+.copyright {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
 } 
-.contacts p {
+.contacts {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -200,7 +199,7 @@ ul {
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
-.type-price p {
+.type-price {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -208,7 +207,7 @@ ul {
     color: var(--extra-dark);
     background-color: var(--basic-white);
 }
-.hotel-rating p {
+.hotel-rating {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
