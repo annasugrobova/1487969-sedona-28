@@ -22,17 +22,6 @@
     --peachy:#F49774;
     --neutral-pink:#F4B1A4; 
 }
-.page-body {
-    margin: 0;
-    padding: 0;
-    min-width: 1240px;
-    font-family:'PT Sans', Tahoma, sans-serif;
-    font-style: normal;
-    text-transform: uppercase; 
-    text-align: center;
-    background-color: var(--basic-white); 
-    background-image: url(img\background-photo.jpg)    
-}
 img {
     max-width: 100%;
     height: auto;
@@ -45,15 +34,64 @@ ul {
     list-style: none;
     color: var(--basic-black);
 }
-.site-navigation,
+.page-body {
+    margin: 0;
+    padding: 0;
+    min-width: 1240px;
+    min-height: 100%;
+    font-family:'PT Sans', Tahoma, sans-serif;
+    font-style: normal;
+    text-transform: uppercase; 
+    text-align: center;
+    background-color: var(--basic-white); 
+    background-image: url(img\background-photo.jpg);  
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;  
+}
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+.site-navigation {
+    width: 100%;
+    margin-bottom: 62,35px;
+    outline: 5px solid rgba(0, 255, 255, 0.3);
+    outline-offset: -5px;
+    list-style: none;
+  }
+.main-logo {
+    width: 138px;
+    height: 70px;
+    order: 3;
+    outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px;
+}
+.page {
+    height: 100%;
+  }
+.main-header {
+    margin-bottom: 62,35px;   
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
+}
+
+.site-navigation a,
 .hotel-name {
     color:var(--basic-black);
 }
-.site-navigation:hover,
+.site-navigation a:hover,
 .hotel-name:hover  {
     color:var(--blue-gray);
 }
-.site-navigation:active,
+.site-navigation a:active,
 .hotel-name:active {
     color:var(--basic-black);
     mix-blend-mode: normal;
@@ -90,55 +128,63 @@ ul {
     border: 2px solid #E5E5E5;
 }
 .form-icons {
-    color: var(--basic-gray);
+    fill: var(--basic-gray);
 }
-.form-icons:hover {
-    color: var(--basic-black);
+.form-icons:hover path {
+    fill: var(--basic-black);
 }
-.form-icons:active {
-    color:var(--blue-gray);
+.form-icons:active path {
+    fill:var(--blue-gray);
+}
+.social-icons {
+    fill: var(--blue-gray);
+}
+.social-icons:hover path {
+    fill: var(--hover-blue);
+}
+.sosial-icons:active path {
+    fill: var(--active-blue);
+    mix-blend-mode: normal;
+    opacity: 0.3;
 }
 .find,
-.more-details,
-.sosial-icons  {
+.more-details {
     background-color: var(--blue-gray);
     color: var(--basic-white);
 }
 .find:hover,
-.more-details:hover,
-.sosial-icons:hover {
+.more-details:hover {
     background-color: var(--hover-blue);
     color: var(--basic-white);
 }
 .find:active
-.more-details:active,
-.sosial-icons:active {
+.more-details:active {
     background-color: var(--active-blue);
     color: var(--basic-white);
     mix-blend-mode: normal;
     opacity: 0.3;
 }
-.htmlacademy-logo {
+.htmlacademy-logo  {
     background-color: var(--basic-white);
-    color: var(--very-extra-dark);
+    fill: var(--very-extra-dark);
 }
-.htmlacademy-logo:hover {
+.htmlacademy-logo:hover path {
     background-color: var(--basic-white);
-    color: var(--blue-gray);
+    fill: var(--blue-gray);
 }
-.htmlacademy-logo:active {
+.htmlacademy-logo:active path {
     background-color: var(--basic-white);
-    color: var(--active-gray);
+    fill: var(--active-gray);
 }
-.site-navigation:focus,
+.site-navigation a:focus,
 .search-hotels:focus,
 .trip-details:focus,
-.form-icons:focus,
+.form-icons:focus path,
 .find:focus,
-.social-icons:focus, 
-.htmlacademy-logo:focus
+.social-icons:focus path, 
+.htmlacademy-logo:focus path, 
 .main-header-logo:focus,
-.hotel-name:focus,
+.hotel-name a:focus,
 .more-details:focus,
 .booking:focus {
     outline-color: var(--basic-blue);
@@ -214,4 +260,12 @@ ul {
     line-height: 21px; 
     color: var(--dark-gray);
     background-color: var(--light-gray);
-}
+} 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  } 
+
