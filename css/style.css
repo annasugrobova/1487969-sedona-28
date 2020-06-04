@@ -51,7 +51,6 @@ ul {
 }
 .main-navigation {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
@@ -62,26 +61,24 @@ ul {
   }
 .site-navigation {
     width: 100%;
-    margin-bottom: 62,35px;
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
     list-style: none;
+    display: flex;
   }
-.main-logo {
+.site-navigation li {
+    width: 25%;
+}
+.main-logo,
+.main-header-logo {
     width: 138px;
     height: 70px;
-    order: 3;
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .page {
     height: 100%;
   }
-.main-header {
-    margin-bottom: 62,35px;   
-    outline: 5px solid rgba(0, 255, 0, 0.3);
-    outline-offset: -5px;
-}
 
 .site-navigation a,
 .hotel-name {
@@ -133,11 +130,16 @@ ul {
 .form-icons:hover path {
     fill: var(--basic-black);
 }
+
 .form-icons:active path {
     fill:var(--blue-gray);
 }
-.social-icons {
+.icons-list {
     fill: var(--blue-gray);
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
 }
 .social-icons:hover path {
     fill: var(--hover-blue);
@@ -224,19 +226,43 @@ ul {
     background-color: var(--basic-white);
 } 
 .main-footer {
-    
+    padding: 23px 0;
     background-color: rgba(255, 255, 255, 0.9);
-    color: var(--basic-black);
+    color: var(--basic-black); 
 }
-.copyright {
+.main-footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.footer-contacts {
+    margin: 0;
+    width: 400px; 
+}
+.footer-social {
+    width: 400px;
+    justify-self: center;
+  }
+.footer-social ul {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.footer-copyright {
+    max-width: 400px;
+    margin: 0;
+    justify-self: end;
+    text-align: center;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
 } 
-.contacts {
+
+.footer-contacts p {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    margin: 0;
 }
 .hotel-name {
     font-weight: bold;
@@ -268,4 +294,15 @@ ul {
     height: 1px;
     margin: -1px;
   } 
-
+.search-form {
+    width: 568px;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    position: absolute;
+    width: 568px;
+}
+.hotels {
+    display: grid;
+}
