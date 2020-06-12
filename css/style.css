@@ -388,8 +388,6 @@ ul {
     flex-wrap: wrap;
 }
 .div-images {
-    display: flex;
-    flex-direction: column;
     width: 135px;
 }
 .amara,
@@ -419,9 +417,6 @@ ul {
     line-height: 21px;
 }
 .div-info {
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: column;
     width: 798px;
 }
 .hotel-name {
@@ -530,11 +525,63 @@ input[type="submit"] {
     text-transform: uppercase;
 }
 
+/*Sorting*/
+
+.sorting {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.sorting li {
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 37px;
+    margin-top: 32px;
+}
+.sorting a{
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+.sorting a:hover {
+    color: #81B3D2;
+}
+.sorting a:focus {
+    outline-color: var(--basic-blue);
+    outline-style: solid;
+    outline-width: 1px;
+}
+.sorting a:active {
+    color: #000000;
+}
+.sorting-current a {
+    color: #81B3D2;
+}
+
+/*
+.sorting.hotels-founded li {
+    margin-right: 46px;
+}
+.sorting.sort-word li {
+    margin-right: 40px;
+}
+.sorting.sorting-types li {
+    margin-right: 33px;
+}
+*/
+
 /* Filters */
+
 .filters {
     width: 390px;
-  }
-  
+    background-image: url(img\background-hotels.png);
+    background-position: absolute; 
+    background-repeat: no-repeat;
+}
+
 .filter fieldset {
     padding: 0;
     margin: 0;
@@ -576,7 +623,6 @@ input[type="submit"] {
     padding-right: 36px;
     padding-left: 36px;
 }
-
 .filter-item {
     margin: 0;
     padding: 0;
@@ -587,16 +633,19 @@ input[type="submit"] {
     width: 317x;
     margin-top: 33px;
   }
+
 .filter-item legend {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
     color: #FFFFFF;
   }
+
 .range-controls {
     margin-top: 20px;
     position: relative;
   }
+
 .range-controls .scale {
     height: 2px;
     background: #FFFFFF;
@@ -628,9 +677,11 @@ input[type="submit"] {
 .range-controls .toggle-max {
     left: 243px;
   }
+
 .price-controls label {
     font-size: 16px;
   }
+
 .price-controls input {
     font-size: inherit;
     width: 50%;
