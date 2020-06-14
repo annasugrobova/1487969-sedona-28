@@ -36,18 +36,12 @@
     text-align: center;
     background-color: var(--basic-white); 
 }
-.inner-body {
 
-    background-image: url(../img/background-hotels.png);
-    background-position: top center;
-    background-repeat: no-repeat;  
-}
-
-.index-body {
-    background-image: url(../img/background-photo.jpg), url(../img/Shape.png);
+.promo {
+    background-image: url(../img/background-photo.png);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: auto; 
+    background-size: cover;
 }
 
 img {
@@ -125,7 +119,6 @@ ul {
 .site-navigation .current-page a {
     color: #766357;
 }
-
 
 .hotel-name a {
     color:var(--basic-black);
@@ -284,8 +277,7 @@ ul {
 /* Main footer */
 
 .main-footer {
-    padding: 23px 0;
-    margin-top: 78px;
+   
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--basic-black); 
 }
@@ -296,8 +288,11 @@ ul {
 }
   
 .footer-contacts {
-    margin: 0;
+    margin-top: 23px;
     width: 400px; 
+}
+.footer-contacts .hashtag {
+    margin-bottom: 9px;
 }
 
 .footer-contacts p {
@@ -318,13 +313,14 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
+
 }
 
-.social-icons {
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+.social-icons svg {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
 .footer-copyright {
@@ -399,7 +395,7 @@ ul {
     margin: -1px;
   } 
 
-.hotels {
+.hotel {
     display: flex;
     flex-wrap: wrap;
 }
@@ -481,9 +477,7 @@ ul {
     align-items: center;
 }
 .div-rating {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+
     width: 110px;
     margin-left: auto;
     margin-right: 73px;
@@ -595,6 +589,35 @@ input[type="submit"] {
     bottom: 183px;
     left: 315px;
 }
+.kids-field .union {
+    position: absolute;
+    left: 77%;
+    bottom: 147px;
+}
+.kids-field .minus {
+    position: absolute;
+    left: 63%;
+    bottom: 151px;
+}
+
+.adults-field .amount {
+    position: absolute;
+    left: 40%;
+    bottom: 147px;
+}
+.adults-field .less {
+    position: absolute;
+    left: 25%;
+    bottom: 151px;
+}
+.arrival-field .calendar {
+    position: absolute;
+    left: 82%;
+}
+.departure-field .calendar {
+    position: absolute;
+    left: 83%;
+}
 
 /*Sorting*/
 
@@ -649,6 +672,8 @@ input[type="submit"] {
 }
 .up-down-icon {
     color: rgba(202, 202, 202, 1);
+    position: relative;
+    left: 40%;
 }
 .up-down-icon :hover {
     color: var(--basic-black);
@@ -668,13 +693,14 @@ input[type="submit"] {
 /* Filters */
 
 .filters {
-    background-image: url(img\background-hotels.png);
-    background-position: absolute; 
+    background-image: url(../img/background-hotels.png); 
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .filter {
     display: flex;
     flex-wrap: wrap;
+    width: 1200px;
 }
 
 .filter fieldset {
@@ -682,7 +708,8 @@ input[type="submit"] {
     margin: 0;
     margin-bottom: 37px;
     border: none;
-  }
+}
+
 .infrastructure {
     width: 220px;
 }
@@ -861,28 +888,29 @@ input[type="submit"] {
 /*reasons to visit Sedona*/
 
 .five-reasons {
-    outline: 5px solid #ff0000;
+   
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr; 
 }
-.first-row {
+.sedona-city {
     display: grid;
     grid-template-columns: 400px 800px; 
 }
-.second-row {
+.advantages {
     display: grid;
     grid-template-columns: 400px 400px 400px;
 }
-.third-row {
+.devil-bridge {
     display: grid;
     grid-template-columns: 800px 400px;
 }
-.forth-row {
+.good-reasons {
     display: grid;
     grid-template-columns: 400px 400px 400px;
+    background: #EEEEEE;
 }
 
-.first-row-container,
+.sedona-city-container,
 .bridge-container {
     background-color: #81B3D2;
 }
@@ -902,22 +930,20 @@ input[type="submit"] {
     margin-bottom: 23px;
 }
 
-.first-row-container,
+.sedona-city-container,
 .bridge-container {
     color: #FFFFFF;
 }
-.forth-row {
-background: #EEEEEE;
-}
-.forth-row h2,
-.first-row h2 {
+
+.good-reasons h2,
+.sedona-city h2 {
     margin-top: 47px;
     margin-bottom: 25px;
 }
-.third-row-container h2 {
+.devil-bridge-container h2 {
     margin-top: 50px;
 }
-.second-row svg {
+.advantages svg {
     margin-top: 60px;
 }
 .five-reasons {
