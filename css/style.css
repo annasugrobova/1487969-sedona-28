@@ -38,7 +38,8 @@
 }
 
 .promo {
-    background-image: url(../img/background-photo.png);
+    background-image: url(../img/background-photo.png); 
+    background-color: var(--light-blue-gray);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,7 +239,8 @@ ul {
 .main-header-logo:focus,
 .hotel-name a:focus,
 .more-details:focus,
-.booking:focus {
+.booking:focus
+.footer-contacts a:focus  {
     outline-color: var(--basic-blue);
     outline-style: solid;
     outline-width: 1px;
@@ -261,6 +263,10 @@ ul {
     color: var(--extra-dark);
     background-color: var(--basic-white);
 }
+.form-heading {
+    margin-top: 58px;
+}
+
 .form-question {
     font-weight: bold;
     font-size: 30px;
@@ -269,7 +275,7 @@ ul {
     background-color: var(--basic-white);
 }
 .form-caption {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: var(--basic-black);
@@ -292,6 +298,7 @@ ul {
 .footer-contacts {
     margin-top: 23px;
     width: 400px; 
+    text-align: center;
 }
 .footer-contacts .hashtag {
     margin-bottom: 9px;
@@ -299,6 +306,12 @@ ul {
 
 .footer-contacts p {
     margin: 0;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+.footer-contacts a {
+    color: var(--basic-black);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -700,6 +713,7 @@ background-color:  #E5E5E5;
 
 .filters {
     background-image: url(../img/background-hotels.png); 
+    background-color: var(--light-blue-gray);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -954,4 +968,50 @@ background-color:  #E5E5E5;
 }
 .five-reasons {
     margin-top: 51px;
+}
+
+.sedona-city-container span::before,
+.bridge-container span::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: #FFFFFF;
+  }
+
+.sedona-city-container span::after,
+.bridge-container span::after
+  {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+.good-reasons-containers span::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    color: #333333;
+}
+
+.good-reasons span::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    color: #333333;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 23px;
+    height: 18px;
+    background-image: url(../img/checked.svg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
