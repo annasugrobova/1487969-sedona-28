@@ -42,6 +42,8 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 73,35px;
+    padding-bottom: 80,76px;
 }
 
 img {
@@ -398,21 +400,20 @@ ul {
 .hotel {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 0px;
 }
 .div-images {
     width: 135px;
     margin-left: 73px;
-    justify-content: space-around;
 }
 
 .amara,
 .motel,
 .apartment {
-    margin-bottom: 61px;
     width: 135px;
     height: 90px;
-    left: 113px;
-    top: 390px;
 }
 .hotel-description {
     display: flex;
@@ -688,6 +689,11 @@ input[type="submit"] {
 }
 .icon-down-current {
     color: var(--blue-gray);
+}
+
+.line {
+height: 1px;
+background-color:  #E5E5E5;
 }
 
 /* Filters */
