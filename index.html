@@ -33,8 +33,8 @@
     <section class="promo">
       <img src="img\welcome.png" width="456.65" height="350.88" alt="Добро пожаловать в прекрасную Седону!"> 
     </section>
-    <section>
-      <p class="main-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <section class="slogan">
+      <p class="main-slogan">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</p>
       <p class="list-heading">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
 
@@ -43,7 +43,7 @@
       <div class="sedona-city"> 
           <div class="sedona-city-container">
           <h2>Настоящий <br> городок</h2>
-          <span>№1</span>
+          <span class="reason-number">№1</span>
           <p>Седона — не аттракцион для туристов, там <br> течёт своя жизнь</p>
           </div>
           <div>
@@ -86,7 +86,7 @@
           </div>
           <div class="devil-bridge-container bridge-container">
           <h2>Там есть <br> мост дьявола</h2>
-          <span>№2</span>
+          <span class="reason-number">№2</span>
           <p>Да, по нему можно пройти! Если, конечно, <br> вы осмелитесь</p>
           </div>
       </div>
@@ -94,17 +94,17 @@
       <div class="good-reasons">
         <div class="good-reasons-containers">
           <h2>Небольшая <br> площадь</h2>
-          <span>№3</span>
+          <span class="reason-number-brown">№3</span>
           <P>Все достопримечательности <br> находятся очень близко</P>
         </div>
         <div class="good-reasons-containers">
         <h2>Красивая <br> дорога</h2>
-        <span>№4</span>
+        <span class="reason-number-brown">№4</span>
         <p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
         </div>
         <div class="good-reasons-containers">
         <h2>Мало <br> туристов</h2>
-        <span>№5</span>
+        <span class="reason-number-brown">№5</span>
         <p>Большинство едет в Гранд Каньон <br> и толпится там</p>
         </div>
       </div>
@@ -113,11 +113,13 @@
     <section class="form-heading"> 
       <h2 class="form-question">Заинтересовались?</h2>
       <p class="form-caption">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button type="button" class="search-hotels">
+        <p>Поиск гостиницы в Седоне</p>
+      </button>
     </section>
-   
-  
- <img src="img\hotels\map.png" width="1199" height="594" alt="Местонахождение города Седона"> 
-
+    <section class="map">
+      <img src="img\hotels\map.png" width="1199" height="594" alt="Местонахождение города Седона"> 
+    </section>
   </main> 
   <footer class="main-footer">
     <div class="container">
@@ -170,12 +172,10 @@
   </div>
 </footer>
 
-    <button type="button" class="search-hotels">
-      <p>Поиск гостиницы в Седоне</p>
-    </button>
-    
-    <form action="" method="GET" class="modal">
-      <div class="arrival-field">
+
+  <section class="modal">
+    <form action="" method="GET" class="form">
+      <div class="form-field arrival">
           <label for="date-in">Дата заезда:
             <input type="date" class="trip-details" name="check-in" id="date-in" value="2017-04-24">
             <button type="button" class="calendar">
@@ -186,7 +186,7 @@
             </button>
         </label> 
       </div> 
-      <div class="departure-field">
+      <div class="form-field departure">
         <label for="date-out">Дата выезда:
           <input type="date" class="trip-details"name="check-out" id="date-out" value="2017-07-04">
           <button type="button" class="calendar">
@@ -198,7 +198,7 @@
         </label>
       </div>
   <div class="adults-kids-container">
-        <div class="adults-field">
+        <div class="people-field adults">
             <label for="adults">Взрослые:
                 <svg class="form-icons less" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="12" height="3" fill="#A9A9A9"/>
@@ -209,7 +209,7 @@
                     </svg>               
             </label> 
         </div> 
-        <div class="kids-field">
+        <div class="people-field kids">
         <label for="kids">Дети:
           <svg class="form-icons minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="12" height="3" fill="#A9A9A9"/>
@@ -223,6 +223,6 @@
   </div>
         <input type="submit" class="find" value="Найти"> 
     </form>
-  </div>
+  </section>
 </body>
 </html>
