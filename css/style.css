@@ -38,7 +38,8 @@
     box-shadow: 10px 0 10px 0 rgba(196, 196, 196, 0.3), -10px 0 10px 0 rgba(196, 196, 196, 0.3);
 }
 
-.inner-page-container {
+.inner-page-container,
+.index-page-container {
 
     background-color: var(--basic-white);
 }
@@ -169,9 +170,12 @@ ul {
     mix-blend-mode: normal;
     opacity: 0.3;
 } 
+
 .search-hotels {
     width: 568px;
     height: 86px;
+    position: relative;
+    
 }
 
 .search-hotels p {
@@ -321,9 +325,7 @@ ul {
     background-color: var(--basic-white);
 } 
 
-.map {
-    position: relative;
-}
+
 
 /* Main footer */
 
@@ -583,14 +585,11 @@ ul {
     
 }
 .form {
-    position: absolute;
+    position: relative;
     width: 568px;
     height: 395px;
-    top: 2169px;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    margin: auto;
+    top: -600px;
+    right: -315px;
     color: var(--basic-black);
     background-color: #FFFFFF;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
@@ -648,11 +647,7 @@ input[type="submit"] {
 .find {
     margin-top: 54px;
 }
-.search-hotels {
-    position: relative;
-    bottom: 183px;
-    left: 315px;
-}
+
 .kids .union {
     position: absolute;
     left: 77%;
@@ -1002,7 +997,9 @@ background-color:  #E5E5E5;
 .sedona-city {
     display: grid;
     grid-template-columns: 400px 800px; 
+
 }
+
 .advantages {
     display: grid;
     grid-template-columns: 400px 400px 400px;
@@ -1011,6 +1008,7 @@ background-color:  #E5E5E5;
     display: grid;
     grid-template-columns: 800px 400px;
 }
+
 .good-reasons {
     display: grid;
     grid-template-columns: 400px 400px 400px;
