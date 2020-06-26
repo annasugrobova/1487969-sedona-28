@@ -118,17 +118,19 @@
       </button>
     </section>
 
-    <section class="map">
-      <img src="img\hotels\map.png" width="1199" height="594" alt="Местонахождение города Седона"> 
-    </section>
-    
+   
+      
+   
   </main> 
-  <footer class="main-footer">
-    <div class="container">
+  <section class="map"> 
+   
+
+  <footer class="main-footer index-footer">
+    <div class="index-container">
 
          <section class="footer-contacts">
            <p class="hashtag">#visitSedona</p>
-           <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
+           <a class="tel-number" href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
          </section> 
 
          <section class="footer-social">
@@ -172,13 +174,15 @@
           </a>
     </div>
   </div>
+  <img src="img\hotels\map.png" width="1199" height="594" alt="Местонахождение города Седона"> 
 </footer>
-
+</section>
+    
 
   <section class="modal">
     <form action="" method="GET" class="form">
       <div class="form-field arrival">
-          <label for="date-in">Дата заезда:
+          <label for="date-in"> <span class="date-in-out">Дата заезда:</span>
             <input type="date" class="trip-details" name="check-in" id="date-in" value="2017-04-24">
             <button type="button" class="calendar">
               <svg class="form-icons" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +193,7 @@
         </label> 
       </div> 
       <div class="form-field departure">
-        <label for="date-out">Дата выезда:
+        <label for="date-out"> <span class="date-in-out">Дата выезда:</span>
           <input type="date" class="trip-details"name="check-out" id="date-out" value="2017-07-04">
           <button type="button" class="calendar">
               <svg class="form-icons" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +205,7 @@
       </div>
   <div class="adults-kids-container">
         <div class="people-field adults">
-            <label for="adults">Взрослые:
+            <label for="adults"> <span class="adult-people">Взрослые:</span>
                 <svg class="form-icons less" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="12" height="3" fill="#A9A9A9"/>
                 </svg>
@@ -212,7 +216,7 @@
             </label> 
         </div> 
         <div class="people-field kids">
-        <label for="kids">Дети:
+        <label for="kids"> <span class="children"> Дети:</span>
           <svg class="form-icons minus" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="12" height="3" fill="#A9A9A9"/>
           </svg>

@@ -102,6 +102,9 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    padding-left: 73px;
+    padding-right: 73px;
     align-items: center;
     font-size: 14px;
     line-height: 26px;
@@ -109,6 +112,7 @@ ul {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.9);
   }
+
 .site-navigation {
     width: 100%;
     list-style: none;
@@ -117,14 +121,13 @@ ul {
     padding-left: 0;
 }
 
-.site-navigation:first-child,
+.site-navigation li:first-child, 
 .site-navigation:nth-child(2) {
     text-align: left;
 } 
-.site-navigation:nth-child(3) {
-    text-align: right;
-}
-.site-navigation:last-child {
+
+.site-navigation li:nth-child(3), 
+.site-navigation li:last-child {
     text-align: right;
 }
 
@@ -136,7 +139,7 @@ ul {
 .main-header-logo {
     width: 138px;
     height: 70px;
-    position: relative;
+    position: absolute;
     left: 0;
     right: 0;
     margin: auto;
@@ -153,7 +156,7 @@ ul {
     mix-blend-mode: normal;
     opacity: 0.3;
 }
-.site-navigation .current-page a {
+.site-navigation .current-page {
     color: #766357;
 }
 
@@ -229,7 +232,6 @@ ul {
 .visitors-number:focus {
     background-color: var(--basic-white);
     color: var(--basic-black);
-
 }
 
 .form-icons {
@@ -256,12 +258,11 @@ ul {
 .social-icons:hover rect {
     fill: var(--hover-blue);
 }
-
-.sosial-icons:active rect {
+.social-icons:active rect {
     fill: var(--active-blue);
 }
 
-.sosial-icons:active path {
+.social-icons:active path {
     fill: var(--basic-white);
     opacity: 0.3;
 }
@@ -295,7 +296,7 @@ ul {
 .more-details:focus,
 .booking:focus
 .footer-contacts a:focus,
-.tel-number a:focus  {
+.tel-number:focus  {
     outline-color: var(--basic-blue);
     outline-style: solid;
     outline-width: 1px;
@@ -316,13 +317,18 @@ ul {
     line-height: 24px;
     color: var(--basic-black);
     background-color: var(--basic-white);
+    margin-bottom: 41px;
+    margin-top: 0;
 }
+
 .form-caption {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: var(--basic-black);
     background-color: var(--basic-white);
+    margin-top: 0;
+    margin-bottom: 46px;
 } 
 
 
@@ -331,13 +337,27 @@ ul {
 
 .main-footer {
    
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
     color: var(--basic-black); 
+}
+.index-footer {
+
+    background: rgba(255, 255, 255, 0.9);
+}
+.map {
+    position: relative;
 }
 
 .main-footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.index-footer .index-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    bottom: 0;
 }
   
 .footer-contacts {
@@ -373,15 +393,14 @@ ul {
     padding: 0;
     list-style: none;
     display: flex;
-
 }
-
-.social-icons svg {
+.footer-social li {
     margin-left: 3px;
     margin-right: 3px;
     margin-top: 36px;
     margin-bottom: 36px;
 }
+
 
 .footer-copyright {
     max-width: 400px;
@@ -517,8 +536,6 @@ ul {
     display: flex;
 } 
 .more-details {
-    width: 110px;
-    height: 27px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -526,16 +543,17 @@ ul {
     align-items: center;
     margin-right: 6px;
     margin-left: 29px;
+    padding: 3px 16px 3px 17px;
 }
+
 .booking {
-    width: 142px;
-    height: 27px;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
     line-height: 21px;
     align-items: center;
+    padding: 3px 17px 3px 16px;
 }
+
 .div-rating {
 
     width: 110px;
@@ -546,14 +564,13 @@ ul {
 .hotel-rating {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 21px; 
+    font-size: 14px; 
     color: var(--dark-gray);
     background-color: var(--light-gray);
-    width: 110px;
-    height: 27px;
     text-align: center;
     margin-top: 44px;
+    padding: 3px 12px 3px 15px;
+
 } 
 
 /* Modal */
@@ -562,22 +579,31 @@ ul {
 .people-field {
     display: flex;
 }
+.date-in-out {
+   margin-right: 24px; 
+}
+.adult-people {
+    margin-right: 40px;
+}
+.children {
+    margin-right: 27px;
+}
+
 .trip-details {
-    width: 346px;
-    height: 38px;
+    width: 333px;
     font-weight: bold;
     font-size: 14px;
-    line-height: 26px;
     padding-left: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .visitors-number {
-    width: 114px;
-    height: 38px;
+
     font-weight: bold;
     font-size: 14px;
-    line-height: 26px;
     text-align: center;
+    padding: 6px 39px;
 }
 
 .adults-kids-container {
@@ -597,7 +623,7 @@ ul {
     background-repeat: repeat;
 }
 .form input {
-    border: none;
+    border: 2px solid #E5E5E5;
 }
 
 .form input:focus {
@@ -810,10 +836,6 @@ background-color:  #E5E5E5;
     width: 540px;
 }
 
-.filter fieldset:first-child {
-    margin-bottom: 25px;
-}
-
 .filter legend {
     margin-bottom: 24px;
     margin-left: 73px;
@@ -864,6 +886,7 @@ background-color:  #E5E5E5;
     height: 23px;
     border: 2px solid #FFFFFF;
     border-radius: 3px;
+    box-sizing: border-box;
   }
 
 .filter-input-checkbox:checked + label::before {
@@ -871,6 +894,11 @@ background-color:  #E5E5E5;
     position: absolute;
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
+    border: none;
+}
+
+.filter-input-checkbox:disabled + label {
+    opacity: 0.3;
 }
 
 .filter-button {
@@ -918,13 +946,18 @@ background-color:  #E5E5E5;
     margin-bottom: 10px;
    
   }
+.max-price {
+    position: relative;
+}
+
 .max-price::before {
     content: "";
     position: absolute;
     width: 2px;
     height: 22px;
     background: #FFFFFF;
-    margin-right: 37px;
+    left: -2px;
+
 }
 
 .range-controls {
@@ -938,11 +971,14 @@ background-color:  #E5E5E5;
     mix-blend-mode: normal;
 
   }
-.range-controls .bar {
-    width: 248px;
+.bar {
+    width: 21%;
+    margin-left: 79%;
     height: 2px;
-    background: #FFFFFF;
+    background-color: black;
+    opacity: 0.3;
   }
+
 .range-controls .toggle {
     position: absolute;
     top: -9px;
@@ -978,13 +1014,13 @@ background-color:  #E5E5E5;
 
 .price-controls {
     display: flex;
-    position: relative;
     margin-bottom: 10px;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
     box-sizing: border-box;
     padding-top: 6px;
     padding-bottom: 8px;
+
   } 
 
 /*reasons to visit Sedona*/
