@@ -591,12 +591,13 @@ ul {
 }
 
 .trip-details {
-    width: 333px;
+    width: 339px;
     font-weight: bold;
     font-size: 14px;
+    text-transform: uppercase;
     padding-left: 13px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .visitors-number {
@@ -604,7 +605,10 @@ ul {
     font-weight: bold;
     font-size: 14px;
     text-align: center;
-    padding: 6px 39px;
+    padding: 0;
+    width: 114px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .adults-kids-container {
@@ -676,27 +680,23 @@ input[type="submit"] {
     margin-top: 54px;
 }
 
-.kids .union {
-    position: absolute;
-    left: 77%;
-    bottom: 147px;
+.people-field  {
+    position: relative;
 }
-.kids .minus {
+ 
+.amount {
     position: absolute;
-    left: 63%;
-    bottom: 151px;
+    margin-top: 14px;
+
 }
 
-.adults .amount {
+.minus {
     position: absolute;
-    left: 40%;
-    bottom: 147px;
+    margin-left: 13px;
+    margin-top: 18px;
 }
-.adults .less {
-    position: absolute;
-    left: 25%;
-    bottom: 151px;
-}
+
+
 .calendar {
     position: absolute;
     left: 92%;
