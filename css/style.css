@@ -65,7 +65,8 @@
     line-height: 26px;
     color: var(--basic-black);
     background-color: var(--basic-white);
-    margin-top: 0;
+    margin-top: 1px;
+    margin-bottom: 46px;
 }
 
 .list-heading {
@@ -97,14 +98,16 @@ ul {
   }
 
   /* Main header */
-  
+
+.main-header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .main-navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    padding-left: 73px;
-    padding-right: 73px;
     align-items: center;
     font-size: 14px;
     line-height: 26px;
@@ -125,6 +128,16 @@ ul {
 .site-navigation:nth-child(2) {
     text-align: left;
 } 
+
+.site-navigation li:first-child {
+    padding-left: 73px;
+    box-sizing: border-box;
+}
+
+.site-navigation li:last-child {
+    padding-right: 73px;
+    box-sizing: border-box;
+}
 
 .site-navigation li:nth-child(3), 
 .site-navigation li:last-child {
@@ -160,6 +173,8 @@ ul {
     color: #766357;
 }
 
+/* Hotels */
+
 .hotel-name a {
     color:var(--basic-black);
 }
@@ -190,6 +205,8 @@ ul {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 13px;
 }
 
 .search-hotels,
@@ -302,12 +319,9 @@ ul {
     outline-width: 1px;
 }
 
-.main-header {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
 .form-heading {
-    margin-top: 58px;
+    margin-top: 31px;
     position: relative;
 }
 
@@ -317,7 +331,7 @@ ul {
     line-height: 24px;
     color: var(--basic-black);
     background-color: var(--basic-white);
-    margin-bottom: 41px;
+    margin-bottom: 33px;
     margin-top: 0;
 }
 
@@ -366,7 +380,9 @@ ul {
     text-align: center;
 }
 .footer-contacts .hashtag {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    margin-left: 74px;
+    margin-top: 1px;
 }
 
 .footer-contacts p {
@@ -380,6 +396,7 @@ ul {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    margin-left: 77px;
 }
 
 .footer-social {
@@ -420,7 +437,7 @@ ul {
 
 .footer-copyright span {
     width: 74px;
-    margin-bottom: 45px;
+    margin-bottom: 52px;
     margin-top: 49px;
     text-align: center;
     font-weight: normal;
@@ -580,11 +597,16 @@ ul {
 .people-field {
     display: flex;
 }
+
+.adults-kids-container {
+    display: flex;
+}
+
 .date-in-out {
    margin-right: 24px; 
 }
 .adult-people {
-    margin-right: 40px;
+    margin-right: 42px;
 }
 .children {
     margin-right: 27px;
@@ -595,26 +617,13 @@ ul {
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    padding-left: 13px;
+    padding-left: 8px;
     padding-top: 9px;
     padding-bottom: 9px;
+    box-sizing: border-box;
 }
 
-.visitors-number {
 
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    padding: 0;
-    width: 114px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-
-.adults-kids-container {
-    display: flex;
-    
-}
 .form {
     position: relative;
     width: 568px;
@@ -661,47 +670,67 @@ input[type="submit"] {
     text-transform: uppercase;
 }
 .arrival label {
-    margin-left: 55px;
-    margin-top: 61px;
+    margin-left: 57px;
+    margin-top: 55px;
 }
 .departure label {
-    margin-left: 55px;
-    margin-top: 41px;
-}
-.adults label {
-    margin-left: 55px;
-    margin-top: 41px;
-}
-.kids label {
-    margin-top: 41px;
-    margin-left: 53px;
-}
-.find {
-    margin-top: 54px;
+    margin-left: 57px;
+    margin-top: 29px;
 }
 
-.people-field  {
-    position: relative;
+.adults label {
+    margin-left: 58px;
+    margin-top: 37px;
 }
- 
+
+.kids label {
+    margin-top: 37px;
+    margin-left: 50px;
+}
+
+.find {
+    margin-top: 55px;
+    margin-left: 6px;
+}
+
+
+.visitors-number {
+
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    width: 114px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 30px;
+}
+
 .amount {
     position: absolute;
-    margin-top: 14px;
-
+    top: 4px;
+    right: 4px;
+    padding: 10px;
 }
 
 .minus {
     position: absolute;
-    margin-left: 13px;
-    margin-top: 18px;
+    padding: 13px;
+    top: 6px;
 }
 
 
 .calendar {
     position: absolute;
-    left: 92%;
-    top: 3px;
+    left: 93%;
+    top: 7px;
     border:none;
+    background: none;
 }
 
 /*Sorting*/
@@ -834,7 +863,7 @@ background-color:  #E5E5E5;
 
 .filter legend {
     margin-bottom: 24px;
-    margin-left: 73px;
+    margin-left: 70px;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -940,6 +969,7 @@ background-color:  #E5E5E5;
     font-weight: bold;
     color: #FFFFFF;
     margin-bottom: 10px;
+    margin-left: 9px;
    
   }
 .max-price {
@@ -955,6 +985,7 @@ background-color:  #E5E5E5;
     left: -2px;
 
 }
+
 
 .range-controls {
     margin-top: 20px;
@@ -998,14 +1029,13 @@ background-color:  #E5E5E5;
 
 .price-controls input {
     font-size: inherit;
-    width: 50%;
-    padding-top: 7,5px;
-    padding-bottom: 7,5px;
-    text-align: center;
+    width: 25%;
     color: #FFFFFF;
     border: none;
     background-color: transparent;
-   
+}
+.min-price input {
+    width: 10%;
 }
 
 .price-controls {
@@ -1017,7 +1047,12 @@ background-color:  #E5E5E5;
     padding-top: 6px;
     padding-bottom: 8px;
 
-  } 
+} 
+
+.from-price,
+.to-price {
+    margin-right: 2px;
+}
 
 /*reasons to visit Sedona*/
 
@@ -1032,6 +1067,7 @@ background-color:  #E5E5E5;
     background-image: url(../img/hotels/true-city.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 256px;
 }
 
 .advantages {
@@ -1040,6 +1076,7 @@ background-color:  #E5E5E5;
 }
 .devil-bridge {
     display: flex;
+    margin-top: 25px;
 
 }
 .devil-background {
@@ -1054,12 +1091,20 @@ background-color:  #E5E5E5;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     background: #EEEEEE;
+    height: 256px;
 }
 
 .sedona-city-container,
 .bridge-container {
     background-color: #81B3D2;
 }
+
+.sedona-city-container p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-left: 6px;
+}
+
 .five-reasons h2 {
     font-weight: bold;
     font-size: 21px;
@@ -1073,7 +1118,9 @@ background-color:  #E5E5E5;
     color: #333333;
 }
 .five-reasons span {
-    margin-bottom: 23px;
+    margin-bottom: 14px;
+    margin-left: 2px;
+    display: inline-block;
 }
 
 .sedona-city-container,
@@ -1089,9 +1136,37 @@ background-color:  #E5E5E5;
 .devil-bridge-container h2 {
     margin-top: 50px;
 }
-.advantages svg {
-    margin-top: 60px;
+
+.bridge-container p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 7px;
 }
+
+.advantages svg {
+    margin-top: 36px;
+    margin-bottom: 5px;
+}
+.advantages-containers .souvenirs-icon {
+    margin-top: 31px;
+    margin-bottom: 7px;
+}
+
+.advantages-containers p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 3px;
+}
+
+.advantages-containers .food {
+    margin-bottom: 28px;
+}
+
+.good-reasons-containers p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
 .five-reasons {
     margin-top: 51px;
 }
