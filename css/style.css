@@ -196,7 +196,7 @@ ul {
     
 }
 
-.search-hotels p {
+.search-hotels span {
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -229,7 +229,7 @@ ul {
 .search-hotels:active {
     background-color: rgb(80, 62, 51);
 }
-.search-hotels:active p {
+.search-hotels:active span {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -365,7 +365,9 @@ ul {
 .main-footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 7px;
 }
+
 .index-footer .index-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -494,13 +496,14 @@ ul {
 .hotel {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 31px;
+    margin-bottom: 19px;
     padding: 0px;
 }
 .div-images {
     width: 135px;
     margin-left: 73px;
+    margin-top: 7px;
 }
 
 .amara,
@@ -512,11 +515,25 @@ ul {
 .hotel-description {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 29px;
+    margin-left: 28px;
+    margin-bottom: 3px;
 }
+
 .hotel-description p {
     margin-top: 7px;
-    margin-bottom: 15,5px;
+    margin-bottom: 15px;
+}
+
+.hotel-description .type-x1 {
+    margin-right: 29px;
+}
+
+.hotel-description .type-x2 {
+    margin-right: 54px;
+}
+
+.hotel-description .type-x3 {
+    margin-right: 11px;
 }
 
 .hotel-type {
@@ -545,7 +562,7 @@ ul {
     font-size: 21px;
     line-height: 26px;
     text-align: left;
-    margin-left: 29px;
+    margin-left: 28px;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -567,6 +584,7 @@ ul {
 .booking {
     font-style: normal;
     font-weight: bold;
+    font-size: 14px;
     line-height: 21px;
     align-items: center;
     padding: 3px 17px 3px 16px;
@@ -577,11 +595,27 @@ ul {
     width: 110px;
     margin-left: auto;
     margin-right: 73px;
+    margin-top: 5px;
 }
 
 .stars {
     background-image: url(../img/star.svg);
-    background-repeat: no-repeat;
+    background-repeat: space;
+    background-size: contain;
+    height: 18px;
+}
+.stars-x4 {
+    width: 90px;
+    margin-left: 21px;
+}
+
+.stars-x3 {
+    width: 66px;
+    margin-left: 46px;
+}
+.stars-x2 {
+    width: 42px;
+    margin-left: 69px;
 }
 
 
@@ -592,7 +626,7 @@ ul {
     color: var(--dark-gray);
     background-color: var(--light-gray);
     text-align: center;
-    margin-top: 44px;
+    margin-top: 49px;
     padding: 3px 12px 3px 15px;
 
 } 
@@ -750,6 +784,10 @@ input[type="submit"] {
     flex-wrap: wrap;
 }
 
+.sorting-container {
+    margin-bottom: -16px;
+}
+
 .sorting li {
     position: relative;
     margin-right: 32px;
@@ -805,11 +843,10 @@ input[type="submit"] {
 .up-down-icon {
     background-color: transparent;
     position: relative;
-    right: -460px;
+    right: -509px;
+    top: -49px;
     border: none;
     padding: 0;
-    margin-top: 40px;
-    margin-bottom: 36px;
     outline: none;
 }
 
@@ -838,6 +875,7 @@ input[type="submit"] {
 .line {
 height: 1px;
 background-color:  #E5E5E5;
+margin-bottom: -8px;
 }
 
 /* Filters */
@@ -848,7 +886,9 @@ background-color:  #E5E5E5;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 26px;
+    height: 191px;
 }
+
 .filter {
     display: flex;
     flex-wrap: wrap;
@@ -868,7 +908,7 @@ background-color:  #E5E5E5;
 }
 
 .filter legend {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     margin-left: 70px;
     font-weight: bold;
     font-size: 16px;
@@ -897,7 +937,7 @@ background-color:  #E5E5E5;
     line-height: 21px;
     color: #FFFFFF;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 42px;
   }
 
 .price-controls label {
@@ -934,10 +974,11 @@ background-color:  #E5E5E5;
 
 .filter-button {
     padding-right: 36px;
-    padding-left: 36px;
-    margin-top: 33px;
+    padding-left: 33px;
+    margin-top: 29px;
     margin-bottom: 37px;
     width: 137px;
+    height: 36px;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
@@ -996,6 +1037,7 @@ background-color:  #E5E5E5;
 .range-controls {
     margin-top: 20px;
     position: relative;
+    margin-left: 9px;
   }
 
 .range-controls .scale {
@@ -1005,8 +1047,8 @@ background-color:  #E5E5E5;
 
   }
 .bar {
-    width: 21%;
-    margin-left: 79%;
+    width: 18%;
+    margin-left: 82%;
     height: 2px;
     background-color: black;
     opacity: 0.3;
@@ -1026,7 +1068,7 @@ background-color:  #E5E5E5;
   }
   
 .range-controls .toggle-max {
-    left: 233px;
+    left: 254px;
   }
 
 .price-controls label {
@@ -1050,8 +1092,11 @@ background-color:  #E5E5E5;
     border: 2px solid #FFFFFF;
     border-radius: 2px;
     box-sizing: border-box;
-    padding-top: 6px;
+    padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 10px;
+    margin-left: 9px;
+    width: 317px;
 
 } 
 
