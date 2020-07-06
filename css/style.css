@@ -205,7 +205,7 @@ ul {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 13px;
 }
 
@@ -654,15 +654,24 @@ ul {
 
 .trip-details {
     width: 339px;
+    height: 38px;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    padding-left: 8px;
+    padding-left: 5px;
     padding-top: 9px;
     padding-bottom: 9px;
     box-sizing: border-box;
 }
 
+.input-wrapper {
+    position: relative;
+    margin-right: 56px;
+    margin-top: 29px;
+}
+.wrapper-in {
+    margin-top: 56px;
+}
 
 .form {
     position: relative;
@@ -709,22 +718,24 @@ input[type="submit"] {
     text-align: center;
     text-transform: uppercase;
 }
+
 .arrival label {
     margin-left: 57px;
-    margin-top: 55px;
+    margin-top: 63px;
 }
+
 .departure label {
     margin-left: 57px;
-    margin-top: 29px;
+    margin-top: 35px;
 }
 
 .adults label {
     margin-left: 58px;
-    margin-top: 37px;
+    margin-top: 35px;
 }
 
 .kids label {
-    margin-top: 37px;
+    margin-top: 35px;
     margin-left: 50px;
 }
 
@@ -767,10 +778,11 @@ input[type="submit"] {
 
 .calendar {
     position: absolute;
-    left: 93%;
-    top: 7px;
+    left: 90%;
+    top: 20px;
     border:none;
     background: none;
+    transform: translateY(-50%);
 }
 
 /*Sorting*/
