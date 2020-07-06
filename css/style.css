@@ -30,7 +30,7 @@
     padding: 0;
     width: 1200px;
     min-height: 100%;
-    font-family:'PT Sans', Tahoma, sans-serif;
+    font-family:"PT Sans", Tahoma, sans-serif;
     font-style: normal;
     text-transform: uppercase; 
     text-align: center;
@@ -855,8 +855,8 @@ input[type="submit"] {
 .up-down-icon {
     background-color: transparent;
     position: relative;
-    right: -509px;
-    top: -49px;
+    right: -511px;
+    top: -53px;
     border: none;
     padding: 0;
     outline: none;
@@ -1078,6 +1078,11 @@ margin-bottom: -8px;
     box-shadow: 0 2px 1px 0 rgba(171, 171, 171, 0.3);
     cursor: pointer;
   }
+.range-controls .toggle:hover {
+    width: 5px;
+    height: 5px;
+    border: 9px solid #ffffff;
+}
   
 .range-controls .toggle-max {
     left: 254px;
@@ -1184,6 +1189,7 @@ margin-bottom: -8px;
     margin-bottom: 14px;
     margin-left: 2px;
     display: inline-block;
+    vertical-align: baseline;
 }
 
 .sedona-city-container,
