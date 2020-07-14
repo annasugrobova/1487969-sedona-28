@@ -32,11 +32,11 @@
     <main class="index-page-container"> 
       <section class="promo">
         <img src="img/welcome.png" width="456" height="350" alt="Добро пожаловать в прекрасную Седону!"> 
+      </section>
+      <section class="slogan">
         <svg width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
         </svg>
-      </section>
-      <section class="slogan">
         <p class="main-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="list-heading">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
@@ -110,9 +110,10 @@
       </section>
     </main> 
     <section class="map"> 
-      <button type="button" class="search-hotels">
-        <p>Поиск гостиницы в Седоне</p>
-      </button>
+      <div class="form-container">
+        <button type="button" class="search-hotels">
+          <span>Поиск гостиницы в Седоне</span>
+        </button>
         <form action="https://echo.htmlacademy.ru/" method="GET" class="form">
           <div class="form-field arrival">
             <label for="date-in"> <span class="date-in-out">Дата заезда:</span>
@@ -178,6 +179,7 @@
           </div>
           <input type="submit" class="find" value="Найти"> 
         </form>
+      </div>
       <footer class="main-footer index-footer">
         <div class="index-container">
           <section class="footer-contacts">
